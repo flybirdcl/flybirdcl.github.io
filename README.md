@@ -1,4 +1,8 @@
 # Predicting weather using LSTM neural networks
+
+
+Project members: Cassidy Liu and Andrew Yu
+
 By now, you should have a good idea of your project's motivations, scope, and potential results. Thus, you will now start filling in portions that will become your final report. For now, you only need to complete a rough draft of the introduction and related works sections (or combine them into a single narrative, whichever you find easier to write).
 
 Create a new web-page with the following.
@@ -14,15 +18,20 @@ All of the information you provide is tentative, and I expect many groups to cha
 
 ## Introduction
 
-The outline must include this information:
 
-An (optionally revised) project name and project scope
-A list of three to five group members
-A five to ten sentence outline
-You may follow Dr. Stirewalt’s guidelines for writing an introduction (see below), but it is not mandatory.
-You should not “fill-in” each paragraph; you should only provide the first sentence of each paragraph.
-You should explain your ideal/expected results for the “details” and “assessment” paragraphs.
-An ethical sweep (see below)
+This introduction explores the use of neural networks in predicting weather in the future. It will be evaluating the benefits and costs of using neural networks as well as the feasability and other factors that need to be considered.
+
+Part of what makes this project possible is the availability to detailed, real-time weather data. Modern data science and technology endeavors have allowed us to get accurate data from anywhere in the world. However, weather data is complex and expensive to obtain. There may be limited data available for training the neural network, which can impact its accuracy.
+
+Predicting weather patterns are of interest for individuals, weather forecasters, and other weather-related concerns such as energy modeling and daylight analysis.  With the growth of machine learning, using neural networks to predict future weather patterns has become more popular. Weather predictions and gathering the predictions' relavent data is something that has long existed before using, so weather programs already have a variety of ways to predict weather. Our project will aim to mainly use historical weather data to predict future weather with recurrent neural networks.
+
+One difficulty in predicting temperature in the long run is the addition of global warming into the equation. Global warming has also become a major concern for a lot of stakeholders of weather. Current weather prediction algorithms and equations may also be impacted with this addition as well.
+
+Current meteorologists use numerical weather prediction models, which solve complex sets of mathematical equations based on the physics of air flow, and heat and moisture exchange, etc. This project focuses on implememnenting a LSTM (a type of RNN) with the use of historical weather data to make weather predictions.
+
+Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) that has been shown to excel at analyzing data sequentially. Since weather data is inherently sequential in nature, LSTM has become a popular approach for predicting weather patterns. LSTM models are capable of capturing the temporal dependencies in weather data, which makes them ideal for predicting complex weather phenomena. With the availability of vast amounts of historical weather data and recent advancements in deep learning techniques, LSTM models have become increasingly popular in weather forecasting. This technology has the potential to revolutionize how weather forecasts are made and can provide valuable insights for decision-making in various fields, including agriculture, aviation, and disaster management. In this context, this study will also explore the benefits and challenges associated with using LSTM for weather prediction and discuss the latest developments in this field.
+
+One of challenges we anticipate having to face is having factors that affect the temperature that are not in our dataset. For example, if a volcano erupts or an urban city has a lot more pollution than normal, these may affect the temperature and will not show up in the dataset in a way that other weather phenomenons would.
 
 ## Methods
 
@@ -70,5 +79,11 @@ For projects that are focused on an application or ethics discussion, you can tw
 Here is an example (and I've added comments in parentheses that would not be part of the submission):
 
 ## References
+
+B. Gong, et al. “Temperature Forecasting by Deep Learning Methods.” Vol. 15, 2022, pp. 8931–8956. https://doi.org/10.5194/gmd-15-8931-2022. Accessed 15 Apr. 2023.
+
+Kosandal, Rohan. “Weather Forecasting with Recurrent Neural Networks.” Medium, Analytics Vidhya, 5 Jan. 2020, https://medium.com/analytics-vidhya/weather-forecasting-with-recurrent-neural-networks-1eaa057d70c3. 
+
+Tran, Trang Thi Kieu, et al. “A Review of Neural Networks for Air Temperature Forecasting.” Water, vol. 13, no. 9, May 2021, p. 1294. Crossref, https://doi.org/10.3390/w13091294.
 
 ## Reflection
