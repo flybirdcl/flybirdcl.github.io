@@ -1,4 +1,4 @@
-# Summarizing articles from news 
+# Predicting weather using LSTM neural networks
 By now, you should have a good idea of your project's motivations, scope, and potential results. Thus, you will now start filling in portions that will become your final report. For now, you only need to complete a rough draft of the introduction and related works sections (or combine them into a single narrative, whichever you find easier to write).
 
 Create a new web-page with the following.
