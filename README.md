@@ -78,7 +78,8 @@ You can also include explanations of important concepts that you have learned/im
 
 For projects that are focused on an application or ethics discussion, you can tweak your discussion outline to match your topic.
 
-Here is an example (and I've added comments in parentheses that would not be part of the submission):
+We tried two different approaches to implementing the LSTM. The first was based on the following blog: https://blog.paperspace.com/weather-forecast-using-ltsm-networks/. We tried using their model on our data and found it to not have a great accuracy with out data. The following 
+
 
 ## References
 
