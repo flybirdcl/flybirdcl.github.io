@@ -45,6 +45,8 @@ tools you will use for analysis,
 possible pitfalls,
 etc.
 
+We utilize numpy and pandas to gather and scrape data from the following kaggle dataset: https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv. We specifically selected 4 datasets to use from the given kaggle link: humidity, pressure, temperature, and wind speed. We then preprocessed the data by taking the standard deviations of each column so the ranges of the value will be minimized to mainly between -3 and 3. We then used the framework tensorflow and keras to create an LSTM (a type of RNN) in python to be trained on the kaggle dataset we selected. We then planned on using a simple web application to deploy and display our trained model and allow users to interact with it. 
+
 ## Related Works
 
 Create a new web-page with the following information.
