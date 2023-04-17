@@ -37,13 +37,13 @@ One of challenges we anticipate having to face is having factors that affect the
 
 We utilize numpy and pandas to gather and scrape data from the following kaggle dataset: https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv. 
 
-The data contains hourly weather data for 30 US & Canadian Cities and 6 Israeli Cities. 
+The data contains hourly weather data for 30 US & Canadian Cities and 6 Israeli Cities from 2012-2017. 
 
 We specifically selected 4 files to use from the given kaggle link: humidity, pressure, temperature, and wind speed as we thought those were the main features that would most likely contribute to the temperature. 
 
-We then preprocessed the data by taking the standard deviations of each column so the ranges of the value will be minimized to mainly between -3 and 3. And we made 80% of the data to be used to train the model, while the remaining 20% were to be used in the validation process. 
+We then preprocessed the data by taking the standard deviations of each of the features so the ranges of the value will be minimized to mainly between -3 and 3. And we made 80% of the data to be used to train the model, while the remaining 20% were to be used in the validation process. 
 
-We then used the framework tensorflow and keras to create an LSTM (a type of RNN) in python to be trained on the kaggle dataset we selected. Specifically, the code defined a multi-step LSTM model using Keras and TensorFlow. The model had two LSTM layers with 32 and 16 units, respectively. The first LSTM layer returns sequences, and the second layer uses the hyperbolic tangent activation function. Finally, the model has a dense layer with a number of units equal to the target size, and it uses mean squared error as the loss function and Adam optimizer with a learning rate of 0.001. 
+We then used the framework tensorflow and keras to create an LSTM (a type of RNN) in python to be trained on the preprocessed data. Specifically, the code defined a multi-step LSTM model using Keras and TensorFlow where it looked back and used data from 48 hours before to predict data 24 hours into the future.
 
 The code was helped with the following tutorial https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/ and can be found here: https://github.com/flybirdcl/WeatherPredict.
 
