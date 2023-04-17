@@ -64,18 +64,6 @@ You will submit a link to your web-page on gradescope.
 
 ## Discussion 
 
-Although you probably will not have final results at this time, you should start outlining your discussion/results. Add a “discussion” section to your report web-page.
-
-Revise your current text.
-Add an outline of your discussion/results section.
-Five to ten sentence outline
-Think about:
-what data you will present,
-how you will interpret/evaluate your data,
-how your work compare to others, and
-how will you prove your point (support your claims).
-You can also include explanations of important concepts that you have learned/implemented. Feel free to do this in a tutorial style.
-
 For projects that are focused on an application or ethics discussion, you can tweak your discussion outline to match your topic.
 
 We tried two different approaches to implementing the LSTM. The first was based on the following blog: https://blog.paperspace.com/weather-forecast-using-ltsm-networks/. We tried using their model on our data and found it to not have a great accuracy with out data. The following 
