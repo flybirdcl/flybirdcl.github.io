@@ -35,16 +35,6 @@ One of challenges we anticipate having to face is having factors that affect the
 
 ## Methods
 
-You should now have a good idea of how you will complete your project. Add a “methods” section to your report web-page, which already includes a draft of your introduction and related works sections.
-
-Revise your introduction and related works.
-Add an outline of your methods section with a five to ten sentence outline while incorporating relevant information from your project updates. Relevant information includes the
-software you are using,
-datasets you are using,
-tools you will use for analysis,
-possible pitfalls,
-etc.
-
 We utilize numpy and pandas to gather and scrape data from the following kaggle dataset: https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv. We specifically selected 4 files to use from the given kaggle link: humidity, pressure, temperature, and wind speed. We then preprocessed the data by taking the standard deviations of each column so the ranges of the value will be minimized to mainly between -3 and 3. nd we made 80% of the dat to be used to train the model, while the remaining 20% were to be used in the validation process. We then used the framework tensorflow and keras to create an LSTM (a type of RNN) in python to be trained on the kaggle dataset we selected. We then planned on using a simple web application to deploy and display our trained model and allow users to interact with it. 
 
 ## Related Works
