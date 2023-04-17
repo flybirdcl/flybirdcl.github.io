@@ -35,7 +35,17 @@ One of challenges we anticipate having to face is having factors that affect the
 
 ## Methods
 
-We utilize numpy and pandas to gather and scrape data from the following kaggle dataset: https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv. We specifically selected 4 files to use from the given kaggle link: humidity, pressure, temperature, and wind speed. We then preprocessed the data by taking the standard deviations of each column so the ranges of the value will be minimized to mainly between -3 and 3. And we made 80% of the data to be used to train the model, while the remaining 20% were to be used in the validation process. We then used the framework tensorflow and keras to create an LSTM (a type of RNN) in python to be trained on the kaggle dataset we selected. We then planned on using a simple web application to deploy and display our trained model and allow users to interact with it. 
+We utilize numpy and pandas to gather and scrape data from the following kaggle dataset: https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv. 
+
+The data contains hourly weather data for 30 US & Canadian Cities and 6 Israeli Cities. 
+
+We specifically selected 4 files to use from the given kaggle link: humidity, pressure, temperature, and wind speed as we thought those were the main features that would most likely contribute to the temperature. 
+
+We then preprocessed the data by taking the standard deviations of each column so the ranges of the value will be minimized to mainly between -3 and 3. And we made 80% of the data to be used to train the model, while the remaining 20% were to be used in the validation process. 
+
+We then used the framework tensorflow and keras to create an LSTM (a type of RNN) in python to be trained on the kaggle dataset we selected. Specifically, the code defined a multi-step LSTM model using Keras and TensorFlow. The model had two LSTM layers with 32 and 16 units, respectively. The first LSTM layer returns sequences, and the second layer uses the hyperbolic tangent activation function. Finally, the model has a dense layer with a number of units equal to the target size, and it uses mean squared error as the loss function and Adam optimizer with a learning rate of 0.001. 
+
+The code was helped with the following tutorial https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/ and can be found here: 
 
 ## Related Works
 
