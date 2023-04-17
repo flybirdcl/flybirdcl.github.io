@@ -33,6 +33,16 @@ Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) that h
 
 One of challenges we anticipate having to face is having factors that affect the temperature that are not in our dataset. For example, if a volcano erupts or an urban city has a lot more pollution than normal, these may affect the temperature and will not show up in the dataset in a way that other weather phenomenons would.
 
+## Ethical Sweep
+
+Since weather forecasting is already really commonly done (with different methods), there aren't many more downsides to using neural networks to predict weather. Generally, there aren't many negative uses of weather data. Our model will only help further make different weather prediction services more accessible to people. Weather predictions are important on an individual level for planning and can also be used for resource management and agricultural applications.
+
+Our project team originally had four people, but we cut down the team due to logistical. The current team only has two of us with similar ethnic backgrounds but different academic backgrounds (coming from different colleges and different professions), so that has helped us have more diverse discussions about how.
+
+The addition of using neural networks also usually adds the question of data ethics. A lot of neural networks uses personal information and can cause issues with data privacy. Our web application will take location information that the user provides but does not save this information about the user. From the developers perspective, there will be no way of discerning which user has looked up what location's weather prediction. Data bias from this data set can be seen from what data was included and excluded. There are more physical factors that could factor into a place's temperature. For example, there is no data included that is relavent to greenhouse gases and the global warming impact on temperature. 
+
+One misinterpretation of results could be that for a lot of users that aren't familiar with neural nets is that the decision process can seem like a black box and not backed on a real model that was trained by real historical data
+
 ## Methods
 
 We utilize numpy and pandas to gather and scrape data from the following kaggle dataset: https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv. 
@@ -49,29 +59,30 @@ The code was helped with the following tutorial https://machinelearningmastery.c
 
 ## Related Works
 
-Create a new web-page with the following information.
+Kosandal's article is a good introduction in using recurrent neural networks (RNNs) in predicting weather (Kosandal, 2020). It runs through an example where it takes in a dataset containing historical temperature, wind speed, wind gust, etc. time series data and uses Python libraries to preprocess, train and run a model that will predict future temperatures.
 
-At least five related works (research, blog posts, videos, books, etc.).
-At least two should be research articles
-For each work, you should provide a one to three sentence summary.
-With the related works, try to answer the question: what is the state-of-the-art in the domain of your project?
+An article discusses the uses of Artificial Neural Networks (ANNs) to predict weather data (Tran et al., 2021). The review shows that LSTMs and RNNs are probably effective tools to predict weather. Reviewed models include a variety of univariate and multivariate MLP (multilayer perceptron), FFNN (feed-forward neural network), FFBF (feed-forward back propagation), GRNN (generalized regression neural network), RBF ( radial basis function), CRNN (convlutional recurrent neural network), RNN, and LSTM models.
 
-This is similar to an annotated bibliography, but I am not expecting you to write more than a few sentences for each entry.
+Another article explores the use of a simple recurrent neural network with convolutional filters, ConvLSTM, and an advanced generative network, the Stochastic Adversarial Video Prediction (SAVP) model (Gong et al., 2023). The model predicts hourly forecasts for places in Europe using 13 years of historical weather data in Europe.
 
-Final reports will require more than one research articles, and you should plan on collecting/skimming additional related works throughout the semester.
+A Washington Post article by Deaton explains new research that indicates how global warming will become a bigger factor in making weather predictions (Deaton, 2022). While right now, the global warming could just be a small source of error, this error could be compounded and cause bigger issues in weather models as time goes on. Additionally, the impact of global warming will only increase as greenhouse gas emissions continue to increase.
 
-You will submit a link to your web-page on gradescope.
+There are also many metereologists that study climatic trends using bottom-up physics-based general circulation and Earth system model approaches (Ise 2019). A study conducted by Ise and Oba detail a top-down approach by training a neural network and a huge dataset about historical global temperature. They were able to obtain 97.0% accuracy by using a LeNet convolutional neural network. The conclusion is that weather forecasting methods should include both a neural network component as well as a numerical method with a physics-based model.
 
 ## Discussion 
 
-For projects that are focused on an application or ethics discussion, you can tweak your discussion outline to match your topic.
-
-We tried two different approaches to implementing the LSTM. The first was based on the following blog: https://blog.paperspace.com/weather-forecast-using-ltsm-networks/. We tried using their model on our data and found it to not have a great accuracy with out data. The following 
+The final project presents a user interface that will give the predicted temperature at a given location (initially will only have a couple options). Currently, our team have a working model at 20% loss, and we are working on having it deployed. Data is evaluated with its accuracy to the actual reading after the predictions. The LSTM model we have is comparable to other atmospheric temperature neural networks; our team drew inspiration from many existing weather models as well as other LSTMs that have similar prediction models. The dataset for this model is a 2012-2017 historical weather dataset that includes field such as historical temperature, air pressure, humidity, city attributes, and wind speed and direction.
 
 
 ## References
 
 B. Gong, et al. “Temperature Forecasting by Deep Learning Methods.” Vol. 15, 2022, pp. 8931–8956. https://doi.org/10.5194/gmd-15-8931-2022. Accessed 15 Apr. 2023.
+
+Deaton, Jeremy. “Climate Change Could Make Weather Harder to Predict.” The Washington Post, WP Company, 25 Jan. 2022, https://www.washingtonpost.com/weather/2022/01/25/climate-change-weather-unpredictable/. 
+
+Ise T and Oba Y (2019) Forecasting Climatic Trends Using Neural Networks: An Experimental Study Using Global Historical Data. Front. Robot. AI 6:32. doi: 10.3389/frobt.2019.00032
+
+Lheureux, Adil. “Weather Forecast Using LSTM Networks.” Paperspace Blog, Paperspace Blog, 13 Jan. 2023, https://blog.paperspace.com/weather-forecast-using-ltsm-networks/. 
 
 Kosandal, Rohan. “Weather Forecasting with Recurrent Neural Networks.” Medium, Analytics Vidhya, 5 Jan. 2020, https://medium.com/analytics-vidhya/weather-forecasting-with-recurrent-neural-networks-1eaa057d70c3. 
 
