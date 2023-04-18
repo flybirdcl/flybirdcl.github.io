@@ -70,6 +70,7 @@ A Washington Post article by Deaton explains new research that indicates how glo
 There are also many metereologists that study climatic trends using bottom-up physics-based general circulation and Earth system model approaches (Ise 2019). A study conducted by Ise and Oba detail a top-down approach by training a neural network and a huge dataset about historical global temperature. They were able to obtain 97.0% accuracy by using a LeNet convolutional neural network. The conclusion is that weather forecasting methods should include both a neural network component as well as a numerical method with a physics-based model.
 
 ## Discussion 
+<img width="767" alt="image" src="https://user-images.githubusercontent.com/22489728/232861847-4b284a43-5662-49e4-8f1e-3116414d9b5f.png">
 
 The final project presents a user interface that will give the predicted temperature at a given location (initially will only have a couple options). Currently, our team have a working model at 20% loss, and we are working on having it deployed. Data is evaluated with its accuracy to the actual reading after the predictions. The LSTM model we have is comparable to other atmospheric temperature neural networks; our team drew inspiration from many existing weather models as well as other LSTMs that have similar prediction models. The dataset for this model is a 2012-2017 historical weather dataset that includes field such as historical temperature, air pressure, humidity, city attributes, and wind speed and direction.
 
