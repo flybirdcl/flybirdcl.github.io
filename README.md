@@ -91,4 +91,4 @@ Tran, Trang Thi Kieu, et al. “A Review of Neural Networks for Air Temperature 
 
 ## Reflection
 
-The team started this project late because this team decided to split off from the stock market prediction team a little late. If the team were to restart, it would be useful to spread the tasks out over a longer period of time. Continue work on the project would be creating a better user interface as well as getting a better accuracy on the model.
+The team started this project late because this team decided to split off from the stock market prediction team a little late. If the team were to restart, it would be useful to spread the tasks out over a longer period of time. Continue work on the project would be creating a better user interface as well as getting more recent data, since the model is currently trained on 2012-2017 data.
