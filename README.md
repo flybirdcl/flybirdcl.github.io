@@ -43,7 +43,7 @@ We then preprocessed the data by taking the standard deviations of each of the f
 
 We then used the framework tensorflow and keras to create an LSTM (a type of RNN) in python to be trained on the preprocessed data. Specifically, the code defined a multi-step LSTM model using Keras and TensorFlow where it looked back and used data from 48 hours before to predict data 24 hours into the future.
 
-The code was helped with the following tutorial https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/ and can be found here: https://github.com/flybirdcl/WeatherPredict.
+The code was helped with the following tutorial https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/ and can be found here: https://github.com/flybirdcl/WeatherPredict. We mainly added mroe code upon the code given in this blog post: https://blog.paperspace.com/weather-forecast-using-ltsm-networks/ as it only made a singular prediction rather than multiple predictions that we do in our code.
 
 ## Related Works
 
