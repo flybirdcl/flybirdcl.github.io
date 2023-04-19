@@ -69,9 +69,11 @@ In our case, the LSTM we utilized was the Adam optimizer with a learning rate of
 Below is the training loss and validation loss of the model on the San Diego hourly weather data from 2012 to 2017:
 <img width="767" alt="image" src="https://user-images.githubusercontent.com/22489728/232861847-4b284a43-5662-49e4-8f1e-3116414d9b5f.png">
 
-Below is one example of the prediction the model makes. We can see here that the model uses the past 48 hours of data, and predicts 24 hours into the future (shown on the x axis). We can see the predictions are similiar to the true values of the temperature. 
+Below is some example of the predictions the model makes. We can see here that the model uses the past 48 hours of data, and predicts 24 hours into the future (shown on the x axis). We can see the predictions are similiar to the true values of the temperature. 
 
 ![image](https://user-images.githubusercontent.com/22489728/232942080-ee6b6310-6df8-4369-b853-c900f84226d6.png)
+![image](https://user-images.githubusercontent.com/22489728/232970759-f5d99c55-ae15-4a2b-8184-7bf0fd5787f0.png)
+![image](https://user-images.githubusercontent.com/22489728/232970924-519608d8-f20b-4c15-be37-1df762bf6251.png)
 
 
 
