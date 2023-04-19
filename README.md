@@ -45,8 +45,6 @@ We then used the framework tensorflow and keras to create an LSTM (a type of RNN
 
 The code was helped with the following tutorial https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/. We also partially utilized how data is preprocessed through this blog: https://blog.paperspace.com/weather-forecast-using-ltsm-networks/. However we added upon the data analysis as it only made only a singular prediction rather than multiple predictions that we do in our code. 
 
-The code for our work can be found here: https://github.com/flybirdcl/WeatherPredict.
-
 ## Related Works
 
 Kosandal's article is a good introduction in using recurrent neural networks (RNNs) in predicting weather (Kosandal, 2020). It runs through an example where it takes in a dataset containing historical temperature, wind speed, wind gust, etc. time series data and uses Python libraries to preprocess, train and run a model that will predict future temperatures.
