@@ -3,18 +3,6 @@
 
 Project members: Cassidy Liu and Andrew Yu
 
-By now, you should have a good idea of your project's motivations, scope, and potential results. Thus, you will now start filling in portions that will become your final report. For now, you only need to complete a rough draft of the introduction and related works sections (or combine them into a single narrative, whichever you find easier to write).
-
-Create a new web-page with the following.
-
-Copy over and then fill in your introduction outline and either weave-in the related works descriptions or create a new related works section. You will need to keep a references section at the end of the document (here is an example).
-Write 400 to 800 words total (roughly one to two pages).
-The key idea for the related works section is that it should be easy to read. It will no longer be a set of disjoint paragraphs. You should group together similar related studies and add transition sentences.
-
-You will submit a link to your web-page on gradescope.
-
-All of the information you provide is tentative, and I expect many groups to change their minds as projects evolve.
-
 
 ## Introduction
 
@@ -74,7 +62,11 @@ There are also many metereologists that study climatic trends using bottom-up ph
 
 The final project presents a user interface that will give the predicted temperature at a given location (initially will only have a couple options). Currently, our team have a working model at 20% loss, and we are working on having it deployed. Data is evaluated with its accuracy to the actual reading after the predictions. The LSTM model we have is comparable to other atmospheric temperature neural networks; our team drew inspiration from many existing weather models as well as other LSTMs that have similar prediction models. The dataset for this model is a 2012-2017 historical weather dataset that includes field such as historical temperature, air pressure, humidity, city attributes, and wind speed and direction.
 
-Below is one example of the prediction. We can see here that the model uses the past 48 hours of data, and predicts 24 hours into the future (shown on the x axis). We can see the predictions are similiar to the true values of the temperature at that time. 
+The reason why we chose an LSTM over other types of neural networks is not only because they can learn long term dependencies in the data, but also aren't suceptible to the vanishing gradient problem like other RNNs are. 
+
+In our case, the LSTM we utilized was the Adam optimizer with a learning rate of 10e-3. The model also utilized the standard MSE function. In addition, we only used data from San Diego from the data compiled in the kaggle dataset. For now, we had a batch size of 256 since our dataset is large and we would like for the model to train efficiently and fast. We also used the tanh activation function as it provided the lowest training loss of all the ones we tried (sigmoid, ReLu, etc.). We also had a lookback of 48 hours, and had the model predict 24 hours into the future (predicted 24 data points). 
+
+Below is one example of the prediction the model makes. We can see here that the model uses the past 48 hours of data, and predicts 24 hours into the future (shown on the x axis). We can see the predictions are similiar to the true values of the temperature. 
 
 ![image](https://user-images.githubusercontent.com/22489728/232942080-ee6b6310-6df8-4369-b853-c900f84226d6.png)
 
