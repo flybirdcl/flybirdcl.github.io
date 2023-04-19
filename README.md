@@ -90,3 +90,5 @@ Kosandal, Rohan. “Weather Forecasting with Recurrent Neural Networks.” Mediu
 Tran, Trang Thi Kieu, et al. “A Review of Neural Networks for Air Temperature Forecasting.” Water, vol. 13, no. 9, May 2021, p. 1294. Crossref, https://doi.org/10.3390/w13091294.
 
 ## Reflection
+
+The team started this project late because this team decided to split off from the stock market prediction team a little late. If the team were to restart, it would be useful to spread the tasks out over a longer period of time. Continue work on the project would be creating a better user interface as well as getting a better accuracy on the model.
