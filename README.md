@@ -70,7 +70,7 @@ The reason why we chose an LSTM over other types of neural networks is not only 
 In our case, the LSTM we utilized was the Adam optimizer with a learning rate of 10e-3. The model also utilized the standard MSE function. In addition, we only used data from San Diego from the data compiled in the kaggle dataset. For now, we had a batch size of 256 since our dataset is large and we would like for the model to train efficiently and fast. We also used the tanh activation function as it provided the lowest training loss of all the ones we tried (sigmoid, ReLu, etc.). We also had a lookback of 48 hours, and had the model predict 24 hours into the future (predicted 24 data points). 
 
 Below is the training loss and validation loss of the model on the San Diego hourly weather data from 2012 to 2017:
-<img width="767" alt="image" src="https://user-images.githubusercontent.com/22489728/232861847-4b284a43-5662-49e4-8f1e-3116414d9b5f.png">
+![image](https://user-images.githubusercontent.com/22489728/233813070-3d25504e-06e6-47b4-92a5-981548008c9c.png)
 
 Below is some example of the predictions the model makes. We can see here that the model uses the past 48 hours of data, and predicts 24 hours into the future (shown on the x axis). We can see the predictions are similiar to the true values of the temperature. 
 
