@@ -62,6 +62,7 @@ There are also many metereologists that study climatic trends using bottom-up ph
 
 ## Discussion 
 
+Our code can be found here: <https://github.com/flybirdcl/WeatherPredict>
 
 The final project presents a user interface that will give the predicted temperature at a given location (initially will only have a couple options). Currently, our team have a working model at 20% loss, and we are working on having it deployed. Data is evaluated with its accuracy to the actual reading after the predictions. The LSTM model we have is comparable to other atmospheric temperature neural networks; our team drew inspiration from many existing weather models as well as other LSTMs that have similar prediction models. The dataset for this model is a 2012-2017 historical weather dataset that includes field such as historical temperature, air pressure, humidity, city attributes, and wind speed and direction.
 
