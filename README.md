@@ -33,7 +33,7 @@ One misinterpretation of results could be that for a lot of users that aren't fa
 
 ## Methods
 
-We utilize numpy and pandas to gather and scrape data from the following kaggle dataset: https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv. 
+We utilize numpy and pandas to gather and scrape data from the following kaggle dataset: <https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv.> 
 
 The data contains hourly weather data for 30 US & Canadian Cities and 6 Israeli Cities from 2012-2017. 
 
@@ -81,15 +81,15 @@ Below is some example of the predictions the model makes. We can see here that t
 
 B. Gong, et al. “Temperature Forecasting by Deep Learning Methods.” Vol. 15, 2022, pp. 8931–8956. https://doi.org/10.5194/gmd-15-8931-2022. Accessed 15 Apr. 2023.
 
-Deaton, Jeremy. “Climate Change Could Make Weather Harder to Predict.” The Washington Post, WP Company, 25 Jan. 2022, https://www.washingtonpost.com/weather/2022/01/25/climate-change-weather-unpredictable/. 
+Deaton, Jeremy. “Climate Change Could Make Weather Harder to Predict.” The Washington Post, WP Company, 25 Jan. 2022, <https://www.washingtonpost.com/weather/2022/01/25/climate-change-weather-unpredictable/.> 
 
 Ise T and Oba Y (2019) Forecasting Climatic Trends Using Neural Networks: An Experimental Study Using Global Historical Data. Front. Robot. AI 6:32. doi: 10.3389/frobt.2019.00032
 
-Lheureux, Adil. “Weather Forecast Using LSTM Networks.” Paperspace Blog, Paperspace Blog, 13 Jan. 2023, https://blog.paperspace.com/weather-forecast-using-ltsm-networks/. 
+Lheureux, Adil. “Weather Forecast Using LSTM Networks.” Paperspace Blog, Paperspace Blog, 13 Jan. 2023, <https://blog.paperspace.com/weather-forecast-using-ltsm-networks/.> 
 
-Kosandal, Rohan. “Weather Forecasting with Recurrent Neural Networks.” Medium, Analytics Vidhya, 5 Jan. 2020, https://medium.com/analytics-vidhya/weather-forecasting-with-recurrent-neural-networks-1eaa057d70c3. 
+Kosandal, Rohan. “Weather Forecasting with Recurrent Neural Networks.” Medium, Analytics Vidhya, 5 Jan. 2020, <https://medium.com/analytics-vidhya/weather-forecasting-with-recurrent-neural-networks-1eaa057d70c3.>
 
-Tran, Trang Thi Kieu, et al. “A Review of Neural Networks for Air Temperature Forecasting.” Water, vol. 13, no. 9, May 2021, p. 1294. Crossref, https://doi.org/10.3390/w13091294.
+Tran, Trang Thi Kieu, et al. “A Review of Neural Networks for Air Temperature Forecasting.” Water, vol. 13, no. 9, May 2021, p. 1294. Crossref, <https://doi.org/10.3390/w13091294.>
 
 ## Reflection
 
