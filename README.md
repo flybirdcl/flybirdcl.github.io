@@ -50,15 +50,15 @@ The code was helped with the following tutorial <https://machinelearningmastery.
 
 ## Related Works
 
-Kosandal's article is a good introduction in using recurrent neural networks in predicting weather (Kosandal, 2020). It runs through an example where it takes in a dataset containing historical temperature, wind speed, wind gust, etc. time series data and uses Python libraries to preprocess, train and run a model that will predict future temperatures.
+Kosandal's article is a good introduction in using recurrent neural networks in predicting weather.[^1] It runs through an example where it takes in a dataset containing historical temperature, wind speed, wind gust, etc. time series data and uses Python libraries to preprocess, train and run a model that will predict future temperatures.
 
-An article discusses the uses of Artificial Neural Networks (ANNs) to predict weather data (Tran et al., 2021). The review shows that LSTMs and RNNs are probably effective tools to predict weather. Reviewed models include a variety of univariate and multivariate MLP (multilayer perceptron), FFNN (feed-forward neural network), FFBF (feed-forward back propagation), GRNN (generalized regression neural network), RBF ( radial basis function), CRNN (convlutional recurrent neural network), RNN, and LSTM models.
+An article discusses the uses of neural networks to predict weather data.[^2] The review shows that LSTMs and RNNs are effective tools to predict weather. Reviewed models include a variety of univariate and multivariate FFNN (feed-forward neural network), FFBF (feed-forward back propagation), GRNN (generalized regression neural network), RBF (radial basis function), CRNN (convlutional recurrent neural network), RNN, and LSTM models.
 
-Another article explores the use of a simple recurrent neural network with convolutional filters, ConvLSTM, and an advanced generative network, the Stochastic Adversarial Video Prediction (SAVP) model (Gong et al., 2023). The model predicts hourly forecasts for places in Europe using 13 years of historical weather data in Europe.
+Another article explores the use of a simple recurrent neural network with convolutional filters, ConvLSTM, and an advanced generative network, the Stochastic Adversarial Video Prediction (SAVP) model.[^3] The model predicts hourly forecasts for places in Europe using 13 years of historical weather data in Europe. Evaluation show promising results in terms of MSE for SAVP and ConvLSTM models
 
-A Washington Post article by Deaton explains new research that indicates how global warming will become a bigger factor in making weather predictions (Deaton, 2022). While right now, the global warming could just be a small source of error, this error could be compounded and cause bigger issues in weather models as time goes on. Additionally, the impact of global warming will only increase as greenhouse gas emissions continue to increase.
+[A Washington Post article](https://www.washingtonpost.com/weather/2022/01/25/climate-change-weather-unpredictable/) by Deaton explains new research that indicates how global warming will become a bigger factor in making weather predictions.[^4] While right now, the global warming could just be a small source of error, this error could be compounded and cause bigger issues in weather models as time goes on. Additionally, the impact of global warming will only increase as greenhouse gas emissions continue to increase.
 
-There are also many metereologists that study climatic trends using bottom-up physics-based general circulation and Earth system model approaches (Ise 2019). A study conducted by Ise and Oba detail a top-down approach by training a neural network and a huge dataset about historical global temperature. They were able to obtain 97.0% accuracy by using a LeNet convolutional neural network. The conclusion is that weather forecasting methods should include both a neural network component as well as a numerical method with a physics-based model.
+There are also many metereologists that study climatic trends using bottom-up physics-based general circulation and Earth system model approache.[^5] A study conducted by Ise and Oba detail a top-down approach by training a neural network and a huge dataset about historical global temperature. They were able to obtain 97.0% accuracy by using a LeNet convolutional neural network. The conclusion is that weather forecasting methods should include both a neural network component as well as a numerical method with the traditional physics-based model (using natural physical laws to determine expected temperature).
 
 ## Discussion 
 
@@ -97,3 +97,12 @@ Kosandal, Rohan. “Weather Forecasting with Recurrent Neural Networks.” Mediu
 
 Tran, Trang Thi Kieu, et al. “A Review of Neural Networks for Air Temperature Forecasting.” Water, vol. 13, no. 9, May 2021, p. 1294. Crossref, <https://doi.org/10.3390/w13091294.>
 
+[^1]: Kosandal, Rohan. “Weather Forecasting with Recurrent Neural Networks.” Medium, Analytics Vidhya, 5 Jan. 2020, <https://medium.com/analytics-vidhya/weather-forecasting-with-recurrent-neural-networks-1eaa057d70c3.>
+
+[^2]: Tran, Trang Thi Kieu, et al. “A Review of Neural Networks for Air Temperature Forecasting.” Water, vol. 13, no. 9, May 2021, p. 1294. Crossref, <https://doi.org/10.3390/w13091294.>
+
+[^3]: B. Gong, et al. “Temperature Forecasting by Deep Learning Methods.” Vol. 15, 2022, pp. 8931–8956. https://doi.org/10.5194/gmd-15-8931-2022. Accessed 15 Apr. 2023.
+
+[^4]: Deaton, Jeremy. “Climate Change Could Make Weather Harder to Predict.” The Washington Post, WP Company, 25 Jan. 2022, <https://www.washingtonpost.com/weather/2022/01/25/climate-change-weather-unpredictable/.> 
+
+[^5]: Ise T and Oba Y (2019) Forecasting Climatic Trends Using Neural Networks: An Experimental Study Using Global Historical Data. Front. Robot. AI 6:32. doi: 10.3389/frobt.2019.00032
