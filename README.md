@@ -33,7 +33,10 @@ One misinterpretation of results could be that for a lot of users that aren't fa
 
 ## Methods
 
-We utilize numpy and pandas to gather and scrape data from the following kaggle dataset: https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv. 
+We utilize numpy and pandas to gather and scrape data from the following kaggle dataset: <https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv.>. Below is the plot of the temperature data of San Diego from 2012-2017. 
+
+![image](https://user-images.githubusercontent.com/22489728/233812988-9273af11-82e3-4a95-ace9-bb32472456dc.png)
+
 
 The data contains hourly weather data for 30 US & Canadian Cities and 6 Israeli Cities from 2012-2017. 
 
@@ -43,7 +46,7 @@ We then preprocessed the data by taking the standard deviations of each of the f
 
 We then used the framework tensorflow and keras to create an LSTM (a type of RNN) in python to be trained on the preprocessed data. Specifically, the code defined a multi-step LSTM model using Keras and TensorFlow where it looked back and used data from 48 hours before to predict data 24 hours into the future.
 
-The code was helped with the following tutorial https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/ and can be found here: https://github.com/flybirdcl/WeatherPredict. We mainly added mroe code upon the code given in this blog post: https://blog.paperspace.com/weather-forecast-using-ltsm-networks/ as it only made a singular prediction rather than multiple predictions that we do in our code.
+The code was helped with the following tutorial <https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/>. We also partially utilized how data is preprocessed through this blog: <https://blog.paperspace.com/weather-forecast-using-ltsm-networks/>. However we added upon the data analysis as it only made only a singular prediction rather than multiple predictions that we do in our code. 
 
 ## Related Works
 
@@ -59,6 +62,7 @@ There are also many metereologists that study climatic trends using bottom-up ph
 
 ## Discussion 
 
+Our code can be found here: <https://github.com/flybirdcl/WeatherPredict>
 
 The final project presents a user interface that will give the predicted temperature at a given location (initially will only have a couple options). Currently, our team have a working model at 20% loss, and we are working on having it deployed. Data is evaluated with its accuracy to the actual reading after the predictions. The LSTM model we have is comparable to other atmospheric temperature neural networks; our team drew inspiration from many existing weather models as well as other LSTMs that have similar prediction models. The dataset for this model is a 2012-2017 historical weather dataset that includes field such as historical temperature, air pressure, humidity, city attributes, and wind speed and direction.
 
@@ -67,11 +71,13 @@ The reason why we chose an LSTM over other types of neural networks is not only 
 In our case, the LSTM we utilized was the Adam optimizer with a learning rate of 10e-3. The model also utilized the standard MSE function. In addition, we only used data from San Diego from the data compiled in the kaggle dataset. For now, we had a batch size of 256 since our dataset is large and we would like for the model to train efficiently and fast. We also used the tanh activation function as it provided the lowest training loss of all the ones we tried (sigmoid, ReLu, etc.). We also had a lookback of 48 hours, and had the model predict 24 hours into the future (predicted 24 data points). 
 
 Below is the training loss and validation loss of the model on the San Diego hourly weather data from 2012 to 2017:
-<img width="767" alt="image" src="https://user-images.githubusercontent.com/22489728/232861847-4b284a43-5662-49e4-8f1e-3116414d9b5f.png">
+![image](https://user-images.githubusercontent.com/22489728/233813070-3d25504e-06e6-47b4-92a5-981548008c9c.png)
 
-Below is one example of the prediction the model makes. We can see here that the model uses the past 48 hours of data, and predicts 24 hours into the future (shown on the x axis). We can see the predictions are similiar to the true values of the temperature. 
+Below is some example of the predictions the model makes. We can see here that the model uses the past 48 hours of data, and predicts 24 hours into the future (shown on the x axis). We can see the predictions are similiar to the true values of the temperature. 
 
 ![image](https://user-images.githubusercontent.com/22489728/232942080-ee6b6310-6df8-4369-b853-c900f84226d6.png)
+![image](https://user-images.githubusercontent.com/22489728/232970759-f5d99c55-ae15-4a2b-8184-7bf0fd5787f0.png)
+![image](https://user-images.githubusercontent.com/22489728/232970924-519608d8-f20b-4c15-be37-1df762bf6251.png)
 
 ## Reflection
 
@@ -81,13 +87,13 @@ The team started this project late because this team decided to split off from t
 
 B. Gong, et al. “Temperature Forecasting by Deep Learning Methods.” Vol. 15, 2022, pp. 8931–8956. https://doi.org/10.5194/gmd-15-8931-2022. Accessed 15 Apr. 2023.
 
-Deaton, Jeremy. “Climate Change Could Make Weather Harder to Predict.” The Washington Post, WP Company, 25 Jan. 2022, https://www.washingtonpost.com/weather/2022/01/25/climate-change-weather-unpredictable/. 
+Deaton, Jeremy. “Climate Change Could Make Weather Harder to Predict.” The Washington Post, WP Company, 25 Jan. 2022, <https://www.washingtonpost.com/weather/2022/01/25/climate-change-weather-unpredictable/.> 
 
 Ise T and Oba Y (2019) Forecasting Climatic Trends Using Neural Networks: An Experimental Study Using Global Historical Data. Front. Robot. AI 6:32. doi: 10.3389/frobt.2019.00032
 
-Lheureux, Adil. “Weather Forecast Using LSTM Networks.” Paperspace Blog, Paperspace Blog, 13 Jan. 2023, https://blog.paperspace.com/weather-forecast-using-ltsm-networks/. 
+Lheureux, Adil. “Weather Forecast Using LSTM Networks.” Paperspace Blog, Paperspace Blog, 13 Jan. 2023, <https://blog.paperspace.com/weather-forecast-using-ltsm-networks/.> 
 
-Kosandal, Rohan. “Weather Forecasting with Recurrent Neural Networks.” Medium, Analytics Vidhya, 5 Jan. 2020, https://medium.com/analytics-vidhya/weather-forecasting-with-recurrent-neural-networks-1eaa057d70c3. 
+Kosandal, Rohan. “Weather Forecasting with Recurrent Neural Networks.” Medium, Analytics Vidhya, 5 Jan. 2020, <https://medium.com/analytics-vidhya/weather-forecasting-with-recurrent-neural-networks-1eaa057d70c3.>
 
-Tran, Trang Thi Kieu, et al. “A Review of Neural Networks for Air Temperature Forecasting.” Water, vol. 13, no. 9, May 2021, p. 1294. Crossref, https://doi.org/10.3390/w13091294.
+Tran, Trang Thi Kieu, et al. “A Review of Neural Networks for Air Temperature Forecasting.” Water, vol. 13, no. 9, May 2021, p. 1294. Crossref, <https://doi.org/10.3390/w13091294.>
 
