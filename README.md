@@ -75,9 +75,9 @@ Below is the training loss and validation loss of the model on the San Diego hou
 
 Below is some example of the predictions the model makes. We can see here that the model uses the past 48 hours of data, and predicts 24 hours into the future (shown on the x axis). We can see the predictions are similiar to the true values of the temperature. 
 
-![image](https://user-images.githubusercontent.com/22489728/232942080-ee6b6310-6df8-4369-b853-c900f84226d6.png)
-![image](https://user-images.githubusercontent.com/22489728/232970759-f5d99c55-ae15-4a2b-8184-7bf0fd5787f0.png)
-![image](https://user-images.githubusercontent.com/22489728/232970924-519608d8-f20b-4c15-be37-1df762bf6251.png)
+![image](https://user-images.githubusercontent.com/22489728/234212476-8155a9ea-4534-4b01-80ba-e9bfa9ee0094.png)
+![image](https://user-images.githubusercontent.com/22489728/234212509-124fa24c-90f4-453e-8413-fbb8d001d8cd.png)
+
 
 ## Reflection
 
