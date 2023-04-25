@@ -7,29 +7,29 @@ Project members: Cassidy Liu and Andrew Yu
 ## Introduction
 
 
-This introduction explores the use of neural networks in predicting weather in the future. It will be evaluating the benefits and costs of using neural networks as well as the feasability and other factors that need to be considered.
+This report explores the use of neural networks in predicting temperature in the future. It will be evaluating the benefits and costs of using neural networks as well as the feasability and other factors that need to be considered.
 
 Part of what makes this project possible is the availability to detailed, real-time weather data. Modern data science and technology endeavors have allowed us to get accurate data from anywhere in the world. However, weather data is complex and expensive to obtain. There may be limited data available for training the neural network, which can impact its accuracy.
 
-Predicting weather patterns are of interest for individuals, weather forecasters, and other weather-related concerns such as energy modeling and daylight analysis.  With the growth of machine learning, using neural networks to predict future weather patterns has become more popular. Weather predictions and gathering the predictions' relavent data is something that has long existed before using, so weather programs already have a variety of ways to predict weather. Our project will aim to mainly use historical weather data to predict future weather with recurrent neural networks.
+Predicting weather patterns are of interest for individuals, weather forecasters, and other weather-related concerns such as energy modeling and daylight analysis.  With the growth of machine learning, using neural networks to predict future weather patterns has become more popular. Weather predictions and gathering the predictions' relavent data is something that has long existed before using, so weather programs already have a variety of ways to predict weather. **Our project will aim to mainly use historical weather data to predict future weather with recurrent neural networks.**
 
 One difficulty in predicting temperature in the long run is the addition of global warming into the equation. Global warming has also become a major concern for a lot of stakeholders of weather. Current weather prediction algorithms and equations may also be impacted with this addition as well.
 
-Current meteorologists use numerical weather prediction models, which solve complex sets of mathematical equations based on the physics of air flow, and heat and moisture exchange, etc. This project focuses on implememnenting a LSTM (a type of RNN) with the use of historical weather data to make weather predictions.
+Current meteorologists use numerical weather prediction models, which solve complex sets of mathematical equations based on the physics of air flow, and heat and moisture exchange, etc. This project focuses on implememnenting a type of recurrent neural network (RNN), Long Short-Term Memory (LSTM), with the use of historical weather data to make weather predictions.
 
-Long Short-Term Memory (LSTM) is a type of recurrent neural network (RNN) that has been shown to excel at analyzing data sequentially. Since weather data is inherently sequential in nature, LSTM has become a popular approach for predicting weather patterns. LSTM models are capable of capturing the temporal dependencies in weather data, which makes them ideal for predicting complex weather phenomena. With the availability of vast amounts of historical weather data and recent advancements in deep learning techniques, LSTM models have become increasingly popular in weather forecasting. This technology has the potential to revolutionize how weather forecasts are made and can provide valuable insights for decision-making in various fields, including agriculture, aviation, and disaster management. In this context, this study will also explore the benefits and challenges associated with using LSTM for weather prediction and discuss the latest developments in this field.
+Long Short-Term Memory is a type of recurrent neural network that has been shown to excel at analyzing data sequentially. Since weather data is inherently sequential in nature, LSTM has become a popular approach for predicting weather patterns. LSTM models are capable of capturing the temporal dependencies in weather data, which makes them ideal for predicting complex weather phenomena. With the availability of vast amounts of historical weather data and recent advancements in deep learning techniques, LSTM models have become increasingly popular in weather forecasting. This technology has the potential to revolutionize how weather forecasts are made and can provide valuable insights for decision-making in various fields, including agriculture, aviation, and disaster management. In this context, this study will also explore the benefits and challenges associated with using LSTM for weather prediction and discuss the latest developments in this field.
 
-One of challenges we anticipate having to face is having factors that affect the temperature that are not in our dataset. For example, if a volcano erupts or an urban city has a lot more pollution than normal, these may affect the temperature and will not show up in the dataset in a way that other weather phenomenons would.
+One of challenges we anticipate having to face is having factors that affect the temperature that are not in our dataset. There may be certain geological structures that are impacting how temperature affects a certain (these patterns might be able to be learned in the model). There are also other obscure factors that may affect a place's temperature this project won't be considering (out of scope). For example, if a volcano erupts or an urban city has a lot more pollution than normal, these may affect the temperature and will not show up in the dataset in a way that other weather phenomenons would.
 
 ## Ethical Sweep
 
-Since weather forecasting is already really commonly done (with different methods), there aren't many more downsides to using neural networks to predict weather. Generally, there aren't many negative uses of weather data. Our model will only help further make different weather prediction services more accessible to people. Weather predictions are important on an individual level for planning and can also be used for resource management and agricultural applications.
+Since weather forecasting is already really commonly done (with different methods), there aren't many more downsides to using neural networks to predict weather. Generally, there aren't many negative uses of weather data, although a potential concern is that the use of the weather data needed may have varying availability in different areas (so there might limited servicability). Our model will only help further make different weather prediction services more accessible to people. Weather predictions are important on an individual level for planning and can also be used for resource management and agricultural applications.
 
 Our project team originally had four people, but we cut down the team due to logistical. The current team only has two of us with similar ethnic backgrounds but different academic backgrounds (coming from different colleges and different professions), so that has helped us have more diverse discussions about how.
 
 The addition of using neural networks also usually adds the question of data ethics. A lot of neural networks uses personal information and can cause issues with data privacy. Our web application will take location information that the user provides but does not save this information about the user. From the developers perspective, there will be no way of discerning which user has looked up what location's weather prediction. Data bias from this data set can be seen from what data was included and excluded. There are more physical factors that could factor into a place's temperature. For example, there is no data included that is relavent to greenhouse gases and the global warming impact on temperature. 
 
-One misinterpretation of results could be that for a lot of users that aren't familiar with neural nets is that the decision process can seem like a black box and not backed on a real model that was trained by real historical data
+One misinterpretation of results could be that for a lot of users that aren't familiar with neural nets is that the decision process can seem like a black box and not backed on a real model that was trained by real historical data.
 
 ## Methods
 
@@ -47,7 +47,7 @@ The code was helped with the following tutorial https://machinelearningmastery.c
 
 ## Related Works
 
-Kosandal's article is a good introduction in using recurrent neural networks (RNNs) in predicting weather (Kosandal, 2020). It runs through an example where it takes in a dataset containing historical temperature, wind speed, wind gust, etc. time series data and uses Python libraries to preprocess, train and run a model that will predict future temperatures.
+Kosandal's article is a good introduction in using recurrent neural networks in predicting weather (Kosandal, 2020). It runs through an example where it takes in a dataset containing historical temperature, wind speed, wind gust, etc. time series data and uses Python libraries to preprocess, train and run a model that will predict future temperatures.
 
 An article discusses the uses of Artificial Neural Networks (ANNs) to predict weather data (Tran et al., 2021). The review shows that LSTMs and RNNs are probably effective tools to predict weather. Reviewed models include a variety of univariate and multivariate MLP (multilayer perceptron), FFNN (feed-forward neural network), FFBF (feed-forward back propagation), GRNN (generalized regression neural network), RBF ( radial basis function), CRNN (convlutional recurrent neural network), RNN, and LSTM models.
 
@@ -73,7 +73,9 @@ Below is one example of the prediction the model makes. We can see here that the
 
 ![image](https://user-images.githubusercontent.com/22489728/232942080-ee6b6310-6df8-4369-b853-c900f84226d6.png)
 
+## Reflection
 
+The team started this project late because this team decided to split off from the stock market prediction team a little late. If the team were to restart, it would be useful to spread the tasks out over a longer period of time. Continue work on the project would be creating a better user interface as well as getting more recent data, since the model is currently trained on 2012-2017 data.
 
 ## References
 
@@ -89,6 +91,3 @@ Kosandal, Rohan. “Weather Forecasting with Recurrent Neural Networks.” Mediu
 
 Tran, Trang Thi Kieu, et al. “A Review of Neural Networks for Air Temperature Forecasting.” Water, vol. 13, no. 9, May 2021, p. 1294. Crossref, https://doi.org/10.3390/w13091294.
 
-## Reflection
-
-The team started this project late because this team decided to split off from the stock market prediction team a little late. If the team were to restart, it would be useful to spread the tasks out over a longer period of time. Continue work on the project would be creating a better user interface as well as getting more recent data, since the model is currently trained on 2012-2017 data.
