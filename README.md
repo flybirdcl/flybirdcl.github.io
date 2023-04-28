@@ -33,26 +33,26 @@ One misinterpretation of results could be that for a lot of users that aren't fa
 
 ## Methods
 
-We utilize numpy and pandas to gather and scrape data from the following kaggle dataset: <https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv.>. Below is the plot of the temperature data of San Diego from 2012-2017. 
+We utilize numpy and pandas to gather and scrape data from the [this kaggle dataset](https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv). Below is the plot of the temperature data of San Diego from 2012-2017. 
 
 ![image](https://user-images.githubusercontent.com/22489728/233812988-9273af11-82e3-4a95-ace9-bb32472456dc.png)
 
 
 The data contains hourly weather data for 30 US & Canadian Cities and 6 Israeli Cities from 2012-2017. 
 
-We specifically selected 4 files to use from the given kaggle link: humidity, pressure, temperature, and wind speed as we thought those were the main features that would most likely contribute to the temperature. 
+We specifically selected 4 files to use from the given kaggle link: humidity, pressure, temperature, and wind speed as we thought those were the main features that would most likely contribute to the temperature. The remaining fields are city attributes, weather description, and wind direction. Weather description data won't be useful with the model that we have built. The focus of our model is on modeling future temperature based on weather history, so city attributes and wind direction are arbitrary for a location.
 
 We then preprocessed the data by taking the standard deviations of each of the features so the ranges of the value will be minimized to mainly between -3 and 3. And we made 80% of the data to be used to train the model, while the remaining 20% were to be used in the validation process. 
 
-We then used the framework tensorflow and keras to create an LSTM (a type of RNN) in python to be trained on the preprocessed data. Specifically, the code defined a multi-step LSTM model using Keras and TensorFlow where it looked back and used data from 48 hours before to predict data 24 hours into the future.
+We then used the frameworks [TensorFlow](https://www.tensorflow.org/) and [Keras](https://keras.io/) to create an LSTM (a type of RNN) in python to be trained on the preprocessed data. Specifically, the code defined a multi-step LSTM model using Keras and TensorFlow where it looked back and used data from 48 hours before to predict data 24 hours into the future.
 
-The code was helped with the following tutorial <https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/>. We also partially utilized how data is preprocessed through this blog: <https://blog.paperspace.com/weather-forecast-using-ltsm-networks/>. However we added upon the data analysis as it only made only a singular prediction rather than multiple predictions that we do in our code. 
+The code was helped with [this tutorial](https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/). We also partially utilized how data is preprocessed through [this blog](https://blog.paperspace.com/weather-forecast-using-ltsm-networks/). However we added upon the data analysis as it only made only a singular prediction rather than multiple predictions that we do in our code. 
 
 ## Related Works
 
 Kosandal's article is a good introduction in using recurrent neural networks in predicting weather.[^1] It runs through an example where it takes in a dataset containing historical temperature, wind speed, wind gust, etc. time series data and uses Python libraries to preprocess, train and run a model that will predict future temperatures.
 
-An article discusses the uses of neural networks to predict weather data.[^2] The review shows that LSTMs and RNNs are effective tools to predict weather. Reviewed models include a variety of univariate and multivariate FFNN (feed-forward neural network), FFBF (feed-forward back propagation), GRNN (generalized regression neural network), RBF (radial basis function), CRNN (convlutional recurrent neural network), RNN, and LSTM models.
+An article by Tran et. al discusses the uses of neural networks to predict weather data.[^2] The review shows that LSTMs and RNNs are effective tools to predict weather. Reviewed models include a variety of univariate and multivariate FFNN (feed-forward neural network), FFBF (feed-forward back propagation), GRNN (generalized regression neural network), RBF (radial basis function), CRNN (convlutional recurrent neural network), RNN, and LSTM models.
 
 Another article explores the use of a simple recurrent neural network with convolutional filters, ConvLSTM, and an advanced generative network, the Stochastic Adversarial Video Prediction (SAVP) model.[^3] The model predicts hourly forecasts for places in Europe using 13 years of historical weather data in Europe. Evaluation show promising results in terms of MSE for SAVP and ConvLSTM models
 
@@ -62,20 +62,26 @@ There are also many metereologists that study climatic trends using bottom-up ph
 
 ## Discussion 
 
-Our code can be found here: <https://github.com/flybirdcl/WeatherPredict>
+#### Our code can be found [here](https://github.com/flybirdcl/TempPredict).
 
-The final project presents a user interface that will give the predicted temperature at a given location (initially will only have a couple options). Currently, our team have a working model at 20% loss, and we are working on having it deployed. Data is evaluated with its accuracy to the actual reading after the predictions. The LSTM model we have is comparable to other atmospheric temperature neural networks; our team drew inspiration from many existing weather models as well as other LSTMs that have similar prediction models. The dataset for this model is a 2012-2017 historical weather dataset that includes field such as historical temperature, air pressure, humidity, city attributes, and wind speed and direction.
+The final project presents a user interface that will give the predicted temperature at a given location (initially will only have a couple options). Currently, our team has a working model, and we are working on having it deployed. Data is evaluated with its accuracy to the actual reading after the predictions. The LSTM model we have is comparable to other atmospheric temperature neural networks; our team drew inspiration from many existing weather models as well as other LSTMs that have similar prediction models. The dataset for this model is a 2012-2017 historical weather dataset that includes field such as historical temperature, air pressure, humidity, city attributes, and wind speed and direction.
 
 The reason why we chose an LSTM over other types of neural networks is not only because they can learn long term dependencies in the data, but also aren't suceptible to the vanishing gradient problem like other RNNs are. 
 
-In our case, the LSTM we utilized was the Adam optimizer with a learning rate of 10e-3. The model also utilized the standard MSE function. In addition, we only used data from San Diego from the data compiled in the kaggle dataset. For now, we had a batch size of 256 since our dataset is large and we would like for the model to train efficiently and fast. We also used the tanh activation function as it provided the lowest training loss of all the ones we tried (sigmoid, ReLu, etc.). We also had a lookback of 48 hours, and had the model predict 24 hours into the future (predicted 24 data points). 
+In our case, the LSTM we chose to use an Adam optimizer with a learning rate of 1e-2. The model also utilized the standard MSE function. In addition, we only used data from San Diego from the data compiled in the kaggle dataset. For now, we had a batch size of 256 since our dataset is large and we would like for the model to train efficiently and fast. We also used the tanh activation function as it provided the lowest training loss of all the ones we tried (sigmoid, ReLu, etc.). We also had a lookback of 48 hours, and had the model predict 24 hours into the future (predicted 24 data points). 
 
-Below is the training loss and validation loss of the model on the San Diego hourly weather data from 2012 to 2017:
-![image](https://user-images.githubusercontent.com/22489728/233813070-3d25504e-06e6-47b4-92a5-981548008c9c.png)
+<figure>
+    <img src="https://user-images.githubusercontent.com/22489728/233813070-3d25504e-06e6-47b4-92a5-981548008c9c.png"
+         alt="Example Prediction">
+    <figcaption>Above is the training loss and validation loss of the model on the San Diego hourly weather data from 2012 to 2017.</figcaption>
+</figure>
 
-Below is some example of the predictions the model makes. We can see here that the model uses the past 48 hours of data, and predicts 24 hours into the future (shown on the x axis). We can see the predictions are similiar to the true values of the temperature. 
+<figure>
+    <img src="https://user-images.githubusercontent.com/22489728/234212476-8155a9ea-4534-4b01-80ba-e9bfa9ee0094.png"
+         alt="Model Loss">
+    <figcaption>Above is some example of the predictions the model makes. We can see here that the model uses the past 48 hours of data, and predicts 24 hours into the future (shown on the x axis). We can see the predictions are similiar to the true values of the temperature.</figcaption>
+</figure>
 
-![image](https://user-images.githubusercontent.com/22489728/234212476-8155a9ea-4534-4b01-80ba-e9bfa9ee0094.png)
 ![image](https://user-images.githubusercontent.com/22489728/234212509-124fa24c-90f4-453e-8413-fbb8d001d8cd.png)
 
 
