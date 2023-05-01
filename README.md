@@ -3,9 +3,11 @@
 
 Project members: Cassidy Liu and Andrew Yu
 
+
 ## Abstract
 
-Weather and temperature is not only an important to individual everyday life but is also relavent to many other topics such as climate change. Studies from other researchers have shown promising results of using neural networks for predicting and future weather and/or temperature. This project creates a Long Short Term Memory model to predict future temperature.
+
+Weather and temperature is not only an important to individual everyday life but is also relavent to many other topics such as climate change. Studies from other researchers have shown promising results of using neural networks for predicting and future weather and/or temperature. This project creates a Long Short Term Memory model to predict future temperature. The model takes in historical weather information such as air pressure and temperature and predicts future temperatures. The model we created shows promising results in predicting the sequence when comparing the prediction and the actual temperature at that time.
 
 
 ## Introduction
@@ -61,7 +63,7 @@ Therefore, multivariate_data() function can be considered an implementation of t
 
 We then used the frameworks [TensorFlow](https://www.tensorflow.org/) and [Keras](https://keras.io/) to create an LSTM (a type of RNN) in python to be trained on the preprocessed data. Specifically, the code defined a multi-step LSTM model using Keras and TensorFlow where it looked back and used data from 48 hours before to predict data 24 hours into the future.
 
-The code was helped with [this tutorial](https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/). We also partially utilized how data is preprocessed through [this blog](https://blog.paperspace.com/weather-forecast-using-ltsm-networks/). However we added upon the data analysis as it only made only a singular prediction rather than multiple predictions that we do in our code. 
+The code was helped with [this tutorial](https://machinelearningmastery.com/return-sequences-and-return-states-for-lstms-in-keras/). We also partially utilized how data is preprocessed through [this blog](https://blog.paperspace.com/weather-forecast-using-ltsm-networks/). However we added upon the data analysis as it only made only a singular prediction rather than multiple predictions that we do in our code. We made it a multi-setp model rather than a single step from the model that we referenced. Our model predicts a sequence of points in the future whereas our reference only predicts a single future point.
 
 ## Related Works
 
@@ -105,7 +107,7 @@ In our case, the LSTM we chose to use an Adam optimizer with a learning rate of 
 
 ## Reflection
 
-The team started this project late because this team decided to split off from the stock market prediction team a little late. If the team were to restart, it would be useful to spread the tasks out over a longer period of time. Continue work on the project would be creating a better user interface as well as getting more recent data, since the model is currently trained on 2012-2017 data.
+The team started this project late because this team decided to split off from the stock market prediction team a little late. If the team were to restart, it would be useful to spread the tasks out over a longer period of time. We could have also spent more time trying out different models. Continue work on the project would be creating a better user interface as well as getting more recent data, since the model is currently trained on 2012-2017 data. Another area to expand on in the future is utilizing more complex data to get more accurate information and also the integration of a physics-based component (that relies on current weather information) in addition to the LSTM that works purely on historical data.
 
 ## References
 
