@@ -85,7 +85,7 @@ The final project presents a user interface that will give the predicted tempera
 
 The reason why we chose an LSTM over other types of neural networks is not only because they can learn long term dependencies in the data, but also aren't suceptible to the vanishing gradient problem like other RNNs are. 
 
-In our case, the LSTM we chose to use an Adam optimizer with a learning rate of 1e-2. The model also utilized the standard MSE function. In addition, we only used data from San Diego from the data compiled in the kaggle dataset. For now, we had a batch size of 256 since our dataset is large and we would like for the model to train efficiently and fast. We also used the tanh activation function as it provided the lowest training loss of all the ones we tried (sigmoid, ReLu, etc.). We also had a lookback of 48 hours, and had the model predict 24 hours into the future (predicted 24 data points). 
+In our case, the LSTM we chose to use an Adam optimizer with a learning rate of 1e-3. The model also utilized the standard MSE function. In addition, we only used data from San Diego from the data compiled in the kaggle dataset. For now, we had a batch size of 256 since our dataset is large and we would like for the model to train efficiently and fast. We also used the tanh activation function as it provided the lowest training loss of all the ones we tried (sigmoid, ReLu, etc.). We also had a lookback of 48 hours, and had the model predict 24 hours into the future (predicted 24 data points). 
 
 <figure>
     <img src="https://user-images.githubusercontent.com/22489728/233813070-3d25504e-06e6-47b4-92a5-981548008c9c.png"
