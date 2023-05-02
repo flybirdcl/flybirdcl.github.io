@@ -118,4 +118,4 @@ The team started this project late because this team decided to split off from t
 
 [^5]: Deaton, Jeremy. “Climate Change Could Make Weather Harder to Predict.” The Washington Post, WP Company, 25 Jan. 2022, <https://www.washingtonpost.com/weather/2022/01/25/climate-change-weather-unpredictable/.> 
 
-[^6]: Ise T and Oba Y (2019) Forecasting Climatic Trends Using Neural Networks: An Experimental Study Using Global Historical Data. Front. Robot. AI 6:32. doi: 10.3389/frobt.2019.00032
+[^6]: Ise T and Oba Y (2019) Forecasting Climatic Trends Using Neural Networks: An Experimental Study Using Global Historical Data. Front. Robot. AI 6:32. doi: [10.3389/frobt.2019.00032](https://doi.org/10.3389/frobt.2019.00032)
