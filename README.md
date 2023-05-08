@@ -7,13 +7,13 @@ Project members: Cassidy Liu and Andrew Yu
 ## Abstract
 
 
-Weather and temperature is not only an important to individual everyday life but is also relavent to many other topics such as climate change. Studies from other researchers have shown promising results of using neural networks for predicting and future weather and/or temperature. This project creates a Long Short Term Memory model to predict future temperature. The model takes in historical weather information such as air pressure and temperature and predicts future temperatures. The model we created shows promising results in predicting the sequence when comparing the prediction and the actual temperature at that time.
+Weather and temperature is not only an important to individual everyday life but is also relevant to many other topics such as climate change. Studies from other researchers have shown promising results of using neural networks for predicting and future weather and/or temperature. This project creates a Long Short Term Memory model to predict future temperature. The model takes in historical weather information such as air pressure and temperature and predicts future temperatures. The model we created shows promising results in predicting the sequence when comparing the prediction and the actual temperature at that time.
 
 
 ## Introduction
 
 
-This report explores the use of neural networks in predicting temperature in the future. It will be evaluating the benefits and costs of using neural networks as well as the feasability and other factors that need to be considered.
+This report explores the use of neural networks in predicting temperature in the future. It will be evaluating the benefits and costs of using neural networks as well as the feasibility and other factors that need to be considered.
 
 Part of what makes this project possible is the availability to detailed, real-time weather data. Modern data science and technology endeavors have allowed us to get accurate data from anywhere in the world. However, there may be varying data availablility for training the neural network, which can impact its accuracy.
 
@@ -21,7 +21,7 @@ Predicting weather patterns are of interest for individuals, weather forecasters
 
 One difficulty in predicting temperature in the long run is the addition of global warming into the equation. Global warming has also become a major concern for a lot of stakeholders of weather. Current weather prediction algorithms and equations may also be impacted with this addition as well.
 
-Current meteorologists use numerical weather prediction models, which solve complex sets of mathematical equations based on the physics of air flow, and heat and moisture exchange, etc. This project focuses on implemementing a type of recurrent neural network (RNN), Long Short-Term Memory (LSTM), with the use of historical weather data to make weather predictions.
+Current meteorologists use numerical weather prediction models, which solve complex sets of mathematical equations based on the physics of air flow, and heat and moisture exchange, etc. This project focuses on implementing a type of recurrent neural network (RNN), Long Short-Term Memory (LSTM), with the use of historical weather data to make weather predictions.
 
 Long Short-Term Memory is a type of recurrent neural network that has been shown to excel at analyzing data sequentially.<sup>[^1]</sup> Since weather data is inherently sequential in nature, LSTM has become a popular approach for predicting weather patterns. LSTM models are capable of capturing the temporal dependencies in weather data, which makes them ideal for predicting complex weather phenomena. With the availability of vast amounts of historical weather data and recent advancements in deep learning techniques, LSTM models have become increasingly popular in weather forecasting. This technology has the potential to revolutionize how weather forecasts are made and can provide valuable insights for decision-making in various fields, including agriculture, aviation, and disaster management. In this context, this study will also explore the benefits and challenges associated with using LSTM for weather prediction and discuss the latest developments in this field.
 
@@ -29,11 +29,11 @@ One of challenges we anticipate having to face is having factors that affect the
 
 ## Ethical Sweep
 
-Since weather forecasting is already really commonly done (with different methods), there aren't many more downsides to using neural networks to predict weather. Generally, there aren't many negative uses of weather data, although a potential concern is that the use of the weather data needed may have varying availability in different areas (so there might limited servicability). Our model will only help further make different weather prediction services more accessible to people. Weather predictions are important on an individual level for planning and can also be used for resource management and agricultural applications.
+Since weather forecasting is already really commonly done (with different methods), there aren't many more downsides to using neural networks to predict weather. Generally, there aren't many negative uses of weather data, although a potential concern is that the use of the weather data needed may have varying availability in different areas (so there might limited serviceability). Our model will only help further make different weather prediction services more accessible to people. Weather predictions are important on an individual level for planning and can also be used for resource management and agricultural applications.
 
 Our project team originally had four people, but we cut down the team due to logistical. The current team only has two of us with similar ethnic backgrounds but different academic backgrounds (coming from different colleges and different professions), so that has helped us have more diverse discussions about how.
 
-The addition of using neural networks also usually adds the question of data ethics. A lot of neural networks uses personal information and can cause issues with data privacy. Our web application will take location information that the user provides but does not save this information about the user. From the developers perspective, there will be no way of discerning which user has looked up what location's weather prediction. Data bias from this data set can be seen from what data was included and excluded. There are more physical factors that could factor into a place's temperature. For example, there is no data included that is relavent to greenhouse gases and the global warming impact on temperature. 
+The addition of using neural networks also usually adds the question of data ethics. A lot of neural networks uses personal information and can cause issues with data privacy. Our web application will take location information that the user provides but does not save this information about the user. From the developers perspective, there will be no way of discerning which user has looked up what location's weather prediction. Data bias from this data set can be seen from what data was included and excluded. There are more physical factors that could factor into a place's temperature. For example, there is no data included that is relevant to greenhouse gases and the global warming impact on temperature. 
 
 One misinterpretation of results could be that for a lot of users that aren't familiar with neural nets is that the decision process can seem like a black box and not backed on a real model that was trained by real historical data.
 
