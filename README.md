@@ -119,7 +119,7 @@ We would also switch to a different library than gradio to deploy our LSTM model
 
 ## References
 
-[^1]: Banoula, Mayank. “Introduction to Long Short-Term Memory(Lstm): Simplilearn.” Simplilearn.com, Simplilearn, 27 Apr. 2023, <https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/lstm#:~:text=LSTMs%20are%20able%20to%20process,problem%20that%20plagues%20traditional%20RNNs.> 
+[1]: Banoula, Mayank. “Introduction to Long Short-Term Memory(Lstm): Simplilearn.” Simplilearn.com, Simplilearn, 27 Apr. 2023, <https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/lstm#:~:text=LSTMs%20are%20able%20to%20process,problem%20that%20plagues%20traditional%20RNNs.> 
 
 [^2]: Kosandal, Rohan. “Weather Forecasting with Recurrent Neural Networks.” Medium, Analytics Vidhya, 5 Jan. 2020, <https://medium.com/analytics-vidhya/weather-forecasting-with-recurrent-neural-networks-1eaa057d70c3.>
 
