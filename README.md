@@ -96,7 +96,7 @@ In our case, the LSTM we chose to use an Adam optimizer with a learning rate of 
 <figure>
     <img src="https://user-images.githubusercontent.com/22489728/236771770-7d2466f7-f3a9-4532-9860-c421f2579829.png"
          alt="Example Prediction">
-    <figcaption>Above is some example of the predictions the model makes. We can see here that the model uses the past 48 hours of data, and predicts 24 hours into the future (shown on the x axis) the temperature in Celcius. We can see the predictions are similiar to the true values of the temperature.</figcaption>
+    <figcaption>Above is some example of the predictions the model makes. We can see here that the model uses the past 48 hours of data, and predicts 24 hours (shown on the x axis) into the future the temperature in Celcius. We can see the predictions are similiar to the true values of the temperature.</figcaption>
 </figure>
 
 <figure>
