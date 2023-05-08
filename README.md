@@ -7,7 +7,7 @@ Project members: Cassidy Liu and Andrew Yu
 ## Abstract
 
 
-Weather and temperature is not only an important to individual everyday life but is also relevant to many other topics such as climate change. Studies from other researchers have shown promising results of using neural networks for predicting and future weather and/or temperature. This project creates a Long Short Term Memory model to predict future temperature. The model takes in historical weather information such as air pressure and temperature and predicts future temperatures. The model we created shows promising results in predicting the sequence when comparing the prediction and the actual temperature at that time.
+Weather and temperature is not only an important for individual everyday life, but is also relevant to many other topics such as climate change. Studies from other researchers have shown promising results of using neural networks for predicting and future weather and/or temperature. This project creates a Long Short Term Memory model to predict future temperature. The model takes in historical weather information such as air pressure and temperature and predicts future temperatures. The model we created shows promising results in predicting the sequence when comparing the prediction and the actual temperature at that time.
 
 
 ## Introduction
@@ -17,7 +17,7 @@ This report explores the use of neural networks in predicting temperature in the
 
 Part of what makes this project possible is the availability to detailed, real-time weather data. Modern data science and technology endeavors have allowed us to get accurate data from anywhere in the world. However, there may be varying data availablility for training the neural network, which can impact its accuracy.
 
-Predicting weather patterns are of interest for individuals, weather forecasters, and other weather-related concerns such as energy modeling and daylight analysis.  With the growth of machine learning, using neural networks to predict future weather patterns has become more popular. Weather predictions and gathering the predictions' relavent data is something that has long existed before using, so weather programs already have a variety of ways to predict weather. **Our project will aim to mainly use historical weather data to predict future temperature with recurrent neural networks.**
+Predicting weather patterns are of interest for individuals, weather forecasters, and other weather-related concerns such as energy modeling and daylight analysis.  With the growth of machine learning, using neural networks to predict future weather patterns has become more popular. Weather predictions and gathering the predictions' relevant data is something that has long existed before using, so weather programs already have a variety of ways to predict weather. **Our project will aim to mainly use historical weather data to predict future temperature with recurrent neural networks.**
 
 One difficulty in predicting temperature in the long run is the addition of global warming into the equation. Global warming has also become a major concern for a lot of stakeholders of weather. Current weather prediction algorithms and equations may also be impacted with this addition as well.
 
