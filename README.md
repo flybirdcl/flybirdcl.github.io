@@ -39,7 +39,7 @@ One misinterpretation of results could be that for a lot of users that aren't fa
 
 ## Methods
 
-We utilize numpy and pandas to gather and scrape data from the [this kaggle dataset](https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv). Below is the plot of the temperature data of San Diego from 2012-2017. 
+We utilize numpy and pandas to gather and scrape data from [this kaggle dataset](https://www.kaggle.com/datasets/selfishgene/historical-hourly-weather-data?select=humidity.csv). Below is the plot of the temperature data of San Diego from 2012-2017. 
 
 ![image](https://user-images.githubusercontent.com/22489728/233812988-9273af11-82e3-4a95-ace9-bb32472456dc.png)
 
